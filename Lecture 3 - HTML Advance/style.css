@@ -1,0 +1,45 @@
+.cv-container {
+  margin: 10px;
+  .header {
+    display: flex;
+    background-color: lightgray;
+    padding: 20px;
+    justify-content: space-between;
+    .header-name {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+/* .header {
+    display: flex;
+    background-color: lightgray;
+    padding: 20px;
+    justify-content: space-between;
+  } */
+
+/* ID  #*/
+/* class .*/
+/* element/tag  */
+
+/* p{
+    color: red;
+}
+
+ul{
+    color: blue;
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+} */
+
+/* #summary{
+    color: green;
+}
+
+#desc{
+color: brown;
+} */
