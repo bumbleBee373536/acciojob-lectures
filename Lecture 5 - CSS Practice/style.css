@@ -1,0 +1,91 @@
+/* Global Scope */
+:root {
+  --primary-bg-btn-color: #1e90ff;
+  --secondary-bg-btn-color: white;
+  --primary-btn-txt-color: white;
+  --secondary-btn-txt-color: black;
+  --input-border-color: red;
+  --input-border-focus-color: #1e90ff;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: lightgray;
+  text-align: center;
+}
+
+/* Local Scope */
+.btn {
+  --secondary-btn-border-color: #1e90ff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: 1px solid var(--secondary-btn-border-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-bg-btn-color);
+  color: var(--primary-btn-txt-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-bg-btn-color);
+  color: var(--secondary-btn-txt-color);
+}
+
+/* Pseudo Classes */
+
+input:hover {
+  border: 1px solid var(--input-border-color);
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid var(--input-border-focus-color);
+}
+
+/* h1:hover{
+    font-size: 200px;
+} */
+
+/* Pseudo Elements */
+
+.required::before {
+  content: "*";
+  color: red;
+}
+
+.required::after {
+  content: ":";
+}
+
+h1::first-letter{
+    font-size: 40px;
+    color: blue;
+}
+
+input::placeholder{
+    color: green
+}
+
+i:hover{
+ font-size: 200px;
+}
+
+/* nth child pseudo element */
+
+/* table tbody tr:nth-child(odd){
+    background-color: lightgray;
+}
+
+table tbody tr:nth-child(even){
+    background-color: lightsalmon;
+} */
+
+table tbody tr:nth-child(n+3){
+    background-color: lightsalmon;
+}
+
+table thead tr:nth-child(odd){
+    background-color: lightblue;
+}

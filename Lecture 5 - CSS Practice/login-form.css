@@ -1,0 +1,15 @@
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  .login-container {
+    border: 1px solid;
+    padding: 20px;
+    /* Local variable not accessible outside the file */
+    color: var(--secondary-btn-border-color);
+  }
+}
