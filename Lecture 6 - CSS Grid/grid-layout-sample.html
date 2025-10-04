@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid layout Sample</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div id="header">Header</div>
+      <div id="section">Section</div>
+      <div id="article">Article</div>
+      <div id="side-section">Side Section</div>
+      <div id="footer">Copyright &amp; Reserved &copy;</div>
+    </div>
+  </body>
+  <style>
+    div {
+      border: 1px solid black;
+      padding: 10px;
+      margin: 10px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(11, 1fr);
+    }
+
+    #header {
+      grid-column: span 4;
+      grid-row: span 2;
+    }
+    #section {
+      grid-column: span 1;
+      grid-row: span 8;
+    }
+    #article {
+      grid-column: 2 / span 2;
+      grid-row: span 8;
+    }
+    #side-section {
+      grid-column: span 1;
+      grid-row: span 8;
+    }
+    #footer {
+      grid-column: span 4;
+      grid-row: 11 / span 5;
+    }
+  </style>
+</html>
