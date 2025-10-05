@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .container {
+      border: 1px solid;
+      margin: 10px;
+      padding: 20px;
+      height: 500px;
+      width: 1000px;
+      position: relative;
+    }
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    position: absolute;
+    animation-name: right-left;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    animation-play-state: running;
+}
+
+    @keyframes right-left {
+        from{
+            left: 100px;
+        }
+
+        to{
+            left: 700px;
+            background-color: blue;
+        }
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
