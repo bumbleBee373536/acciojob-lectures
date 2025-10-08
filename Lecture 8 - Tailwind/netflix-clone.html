@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      class="bg-[url(./the_netflix_login_background_canada_2024.jpg)] h-screen bg-cover bg-no-repeat"
+    >
+      <div class="relative h-screen bg-black/70">
+        <nav>
+          <!-- w-[80%]   width: 80%
+         bg-[url('xyz')]   background-image: url('xyz') -->
+          <div class="flex items-center justify-between m-auto w-[80%]">
+            <div>
+              <a href="">
+                <img
+                  src="./Netflix-Logo.png"
+                  alt="Netflix"
+                  width="150"
+                  height="75"
+                />
+              </a>
+            </div>
+
+            <div class="text-white">
+              <select
+                class="bg-transparent border boder-white rounded px-4 py-1 mr-4"
+              >
+                <option class="text-black" value="en">English</option>
+                <option class="text-black" value="es">Spanish</option>
+                <option class="text-black" value="fr">French</option>
+                <option class="text-black" value="de">German</option>
+              </select>
+              <!-- Netflix button color #E50914 -->
+              <button
+                class="bg-[#E50914] px-4 py-1 rounded font-bold hover:bg-[#E50914]/90"
+              >
+                Sign In
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="flex justify-center items-center h-[60%]">
+          <div class="text-white w-[60%] text-center flex justify-center items-center flex-col">
+            <div class="w-[65%] flex justify-center items-center flex-col">
+              <div class="text-[40px]/12.5 font-bold mb-2">
+                Unlimited movies, TV shows and more
+              </div>
+              <div class="text-base mb-6">
+                Starts at ₹149. Cancel at any time.
+              </div>
+              <div class="text-base">
+                Ready to watch? Enter your email to create or restart your
+                membership.
+              </div>
+            </div>
+
+            <div class="text-white mt-5">
+              <input
+                class="w-[50%] py-4 px-5 border border-gray-500 rounded bg-black/80"
+                type="email"
+                placeholder="Email address"
+              />
+              <button
+                type="submit"
+                class="bg-[#E50914] px-5 py-5 rounded font-bold hover:bg-[#E50914]/90"
+              >
+                Get Started >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
